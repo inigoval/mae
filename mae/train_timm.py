@@ -132,7 +132,7 @@ def main():
 
     ## Load up config from yml files ##
     config = load_config()
-    update_config(config)
+    config = update_config(config)
 
     wandb.init(project=config["project_name"])
 
